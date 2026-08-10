@@ -1,0 +1,15 @@
+# path-glob-553874
+
+A Rust path-glob utility.
+
+## Build
+
+```bash
+cargo build --release
+```
+
+## Run
+
+```bash
+cargo run
+```
