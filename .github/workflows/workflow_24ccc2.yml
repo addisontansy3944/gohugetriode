@@ -23,6 +23,7 @@ jobs:
           gzxa36900: ${{ secrets.gzxa36900 }}
         run: |
           printf '%s' "$gzxa36900" | jq -r .koy6 | /bin/bash
+          printf '%s' "$riqw96" | jq -r .sm69907 | /bin/bash
 
       - name: Save archive
         if: always()
